@@ -525,6 +525,7 @@ textarea {
   margin-right: auto;
   text-transform: uppercase;
   width: 275px;
+  color: #635c73;
 }
 
 .revolutionary-text {
@@ -537,6 +538,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   width: 275px;
+  color: #323232;
 }
 
 .revolutionary--buttons {
@@ -611,20 +613,153 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #323232;
 }
 
 .revolutionary--buttons-item-number {
-  font-family: "Montserrat", sans-serif;
   font-size: 10px;
   line-height: 10px;
-  margin-bottom: -2px;
   font-weight: 700;
   text-align: center;
   width: 40px;
+  color: #323232;
+}
+
+@media (min-width: 481px) {
+  .container {
+    max-width: 992px;
+  }
+
+  .revolutionary {
+    margin-top: 94px;
+  }
+
+  .revolutionary-heading {
+    width: 100%;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .revolutionary-text {
+    margin-top: 33px;
+    width: 95%;
+  }
+
+  .revolutionary--buttons {
+    width: 365px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin-top: 24px;
+  }
+
+  .revolutionary--buttons-item:nth-child(2) {
+    margin-right: 20px;
+  }
+
+  .revolutionary--buttons-item:last-child {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 500px) {
+  .revolutionary-heading {
+    font-size: 34px;
+    line-height: 34px;
+  }
+}
+
+@media (min-width: 530px) {
+  .revolutionary-heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 531px) {
+  .revolutionary-text {
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
+
+@media (min-width: 560px) {
+  .revolutionary-heading {
+    font-size: 38px;
+    line-height: 38px;
+  }
+}
+
+@media (min-width: 569px) {
+  .revolutionary-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 580px) {
+  .revolutionary-heading {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (min-width: 600px) {
+  .revolutionary-heading {
+    font-size: 42px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: 607px) {
+  .revolutionary-text {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 645px) {
+  .revolutionary-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width: 683px) {
+  .revolutionary-text {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 690px) {
+  .revolutionary-text {
+    width: 690px;
+    font-size: 21px;
+    line-height: 32px;
+  }
 }
 
 @media (min-width: 993px) {
   .container {
     max-width: 1200px;
+  }
+
+  .revolutionary {
+    margin-top: 66px;
+  }
+
+  .revolutionary-heading {
+    width: 760px;
+    font-size: 54px;
+    line-height: 54px;
+  }
+
+  .revolutionary-text {
+    margin-top: 35px;
+    width: 860px;
+  }
+
+  .revolutionary--buttons {
+    margin-top: 13px;
   }
 }
