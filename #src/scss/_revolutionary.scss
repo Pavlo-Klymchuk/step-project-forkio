@@ -18,7 +18,7 @@
     margin-right: auto;
     text-transform: uppercase;
     width: 275px;
-    color: $violet-color-darck;
+    color: $violet-color-dark;
     @media (min-width: 481px) {
         width: 100%;
         font-size: 32px;
@@ -61,7 +61,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 275px;
-    color: $text-color-darck;
+    color: $text-color-dark;
     @media (min-width: 481px) {
         margin-top: 33px;
         width: 95%;
@@ -166,7 +166,7 @@
     font-weight: 700;
     display: flex;
     align-items: center;
-    color: $text-color-darck;
+    color: $text-color-dark;
 }
 
 .revolutionary--buttons-item-number {
@@ -175,5 +175,5 @@
     font-weight: 700;
     text-align: center;
     width: 40px;
-    color: $text-color-darck;
+    color: $text-color-dark;
 }
