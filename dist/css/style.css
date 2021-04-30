@@ -504,3 +504,127 @@ textarea {
   src: url("../fonts/Lato-BoldItalic.woff") format("woff");
   src: url("../fonts/Lato-BoldItalic.woff2") format("woff2");
 }
+
+.container {
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.revolutionary {
+  margin-top: 80px;
+}
+
+.revolutionary-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  width: 275px;
+}
+
+.revolutionary-text {
+  margin-top: 27px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 275px;
+}
+
+.revolutionary--buttons {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 250px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.revolutionary--buttons-item {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 115px;
+  height: 26px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.revolutionary--buttons-item:first-child {
+  margin-right: 20px;
+}
+
+.revolutionary--buttons-item:last-child {
+  margin-top: 20px;
+}
+
+.revolutionary--buttons-item-img {
+  width: 12px;
+  height: 12px;
+  margin-top: -2px;
+}
+
+.revolutionary--button-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  max-width: 70px;
+  line-height: 24px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e9e3e3), to(#ffffff));
+  background: -o-linear-gradient(bottom, #e9e3e3, #ffffff);
+  background: linear-gradient(to top, #e9e3e3, #ffffff);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.revolutionary--buttons-item-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.revolutionary--buttons-item-number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 10px;
+  margin-bottom: -2px;
+  font-weight: 700;
+  text-align: center;
+  width: 40px;
+}
+
+@media (min-width: 993px) {
+  .container {
+    max-width: 1200px;
+  }
+}
