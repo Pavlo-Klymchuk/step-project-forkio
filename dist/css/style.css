@@ -517,7 +517,6 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #27262a;
-  background-size: container;
 }
 
 .header__logo-icon--hover {
@@ -779,8 +778,8 @@ textarea {
 
   .revolutionary-heading {
     width: 100%;
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 35px;
+    line-height: 42px;
   }
 
   .revolutionary-text {
@@ -804,73 +803,87 @@ textarea {
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 483px) {
   .revolutionary-heading {
-    font-size: 34px;
-    line-height: 34px;
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 
-@media (min-width: 530px) {
+@media (min-width: 496px) {
   .revolutionary-heading {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 37px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: 509px) {
+  .revolutionary-heading {
+    font-size: 38px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: 523px) {
+  .revolutionary-heading {
+    font-size: 39px;
+    line-height: 42px;
   }
 }
 
 @media (min-width: 531px) {
   .revolutionary-text {
     font-size: 15px;
-    line-height: 23px;
+    line-height: 32px;
   }
 }
 
-@media (min-width: 560px) {
-  .revolutionary-heading {
-    font-size: 38px;
-    line-height: 38px;
-  }
-}
-
-@media (min-width: 569px) {
-  .revolutionary-text {
-    font-size: 16px;
-    line-height: 25px;
-  }
-}
-
-@media (min-width: 580px) {
+@media (min-width: 536px) {
   .revolutionary-heading {
     font-size: 40px;
-    line-height: 40px;
+    line-height: 42px;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 550px) {
+  .revolutionary-heading {
+    font-size: 41px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: 563px) {
   .revolutionary-heading {
     font-size: 42px;
     line-height: 42px;
   }
 }
 
+@media (min-width: 569px) {
+  .revolutionary-text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
 @media (min-width: 607px) {
   .revolutionary-text {
     font-size: 17px;
-    line-height: 26px;
+    line-height: 32px;
   }
 }
 
 @media (min-width: 645px) {
   .revolutionary-text {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 32px;
   }
 }
 
 @media (min-width: 683px) {
   .revolutionary-text {
     font-size: 19px;
-    line-height: 30px;
+    line-height: 32px;
   }
 }
 
