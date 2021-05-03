@@ -1,7 +1,6 @@
 .header {
   box-sizing: border-box;
   background-color: $header-bc-color;
-  background-size: container;
 }
 
 .header__logo-icon--hover {
@@ -23,7 +22,7 @@
   background-color: $violet-color-light;
   padding: 13px 25px;
   border-radius: 40px;
-  font-family: Montserrat, sant-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 15px;
@@ -91,7 +90,7 @@
 
 .nav__inner {
   padding: 5px 56px 5px 13px;
-  font-family: Montserrat, sant-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 26px;
   line-height: 26px;
   color: $white;
