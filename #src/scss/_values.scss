@@ -10,16 +10,36 @@ $text-color-dark: #323232;
 $violet-color-for-prices: #463048;
 $bg-for-menu-mobil: #333333;
 
+$Lato: "lato", sant-serif;
+$Montserrat: "Montserrat", sant-serif;
+
 .container {
   min-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-left: 10px;
-  padding-right: 10px; */
+  // padding-left: 10px;
+  // padding-right: 10px;
   @media (min-width: 481px) {
     max-width: 992px;
   }
   @media (min-width: 993px) {
     max-width: 1200px;
+  }
+}
+
+.section__header {
+  font-family: $Montserrat;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: $white;
+  @media (min-width: 481px) {
+    font-size: 42px;
+    line-height: 44px;
+  }
+  @media (min-width: 993px) {
+    font-size: 48px;
+    line-height: 50px;
   }
 }
