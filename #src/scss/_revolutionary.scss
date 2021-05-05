@@ -9,7 +9,7 @@
 }
 
 .revolutionary-heading {
-  font-family: "Montserrat", sans-serif;
+  font-family: $Montserrat;
   font-size: 26px;
   line-height: 28px;
   font-weight: 700;
@@ -61,7 +61,7 @@
 
 .revolutionary-text {
   margin-top: 27px;
-  font-family: "Lato", sans-serif;
+  font-family: $Lato;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -168,7 +168,7 @@
 }
 
 .revolutionary--buttons-item-text {
-  font-family: "Montserrat", sans-serif;
+  font-family: $Montserrat;
   font-size: 12px;
   line-height: 12px;
   font-weight: 700;
