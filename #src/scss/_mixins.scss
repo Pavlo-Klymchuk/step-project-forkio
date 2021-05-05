@@ -1,3 +1,23 @@
 @mixin reset-button {
   padding: 0;
 }
+
+%link-style {
+  background-color: $violet-color-light;
+  border-radius: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: $white;
+  text-decoration: none;
+  border: 2px solid #8d81ac;
+  &:hover {
+    background-color: $white;
+    color: $violet-color-light;
+  }
+}
+
+%position-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
