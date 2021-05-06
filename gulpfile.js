@@ -1,28 +1,28 @@
-const profect_folder = "dist";
-const source_folder = "#src";
+const profectFolder = "dist";
+const sourceFolder = "src";
 
 const path = {
   build: {
-    html: profect_folder + "/",
-    css: profect_folder + "/css/",
-    js: profect_folder + "/js/",
-    img: profect_folder + "/img/",
-    fonts: profect_folder + "/fonts/",
+    html: profectFolder + "/",
+    css: profectFolder + "/css/",
+    js: profectFolder + "/js/",
+    img: profectFolder + "/img/",
+    fonts: profectFolder + "/fonts/",
   },
   src: {
-    html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-    css: source_folder + "/scss/style.scss",
-    js: source_folder + "/js/script.js",
-    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-    fonts: source_folder + "/fonts/*.{ttf,otf,woff,woff2}",
+    html: [sourceFolder + "/*.html", "!" + sourceFolder + "/_*.html"],
+    css: sourceFolder + "/scss/style.scss",
+    js: sourceFolder + "/js/script.js",
+    img: sourceFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    fonts: sourceFolder + "/fonts/*.{ttf,otf,woff,woff2}",
   },
   watch: {
-    html: source_folder + "/**/*.html",
-    css: source_folder + "/scss/**/*.scss",
-    js: source_folder + "/js/**/*.js",
-    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    html: sourceFolder + "/**/*.html",
+    css: sourceFolder + "/scss/**/*.scss",
+    js: sourceFolder + "/js/**/*.js",
+    img: sourceFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
   },
-  clean: "./" + profect_folder + "/",
+  clean: "./" + profectFolder + "/",
 };
 
 const { src, dest } = require("gulp"),
@@ -32,8 +32,8 @@ const { src, dest } = require("gulp"),
   del = require("del"),
   scss = require("gulp-sass"),
   autoprefixer = require("gulp-autoprefixer"),
-  group_media = require("gulp-group-css-media-queries"),
-  clean_css = require("gulp-clean-css"),
+  groupMedia = require("gulp-group-css-media-queries"),
+  cleanCss = require("gulp-clean-css"),
   rename = require("gulp-rename"),
   uglify = require("gulp-uglify-es").default,
   imagemin = require("gulp-imagemin"),
@@ -43,7 +43,7 @@ const { src, dest } = require("gulp"),
 function browserSync(params) {
   browsersync.init({
     server: {
-      baseDir: "./" + profect_folder + "/",
+      baseDir: "./" + profectFolder + "/",
     },
     port: 3000,
     notify: false,
@@ -65,7 +65,7 @@ function css() {
         outputStyle: "expanded",
       })
     )
-    .pipe(group_media())
+    .pipe(groupMedia())
     .pipe(
       autoprefixer({
         overrideBrowserslist: ["last 5 versions"],
@@ -73,7 +73,7 @@ function css() {
       })
     )
     .pipe(dest(path.build.css))
-    .pipe(clean_css())
+    .pipe(cleanCss())
     .pipe(
       rename({
         extname: ".min.css",
@@ -133,7 +133,18 @@ function clean(params) {
   return del(path.clean);
 }
 
-const build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+const build = gulp.series(clean, css, fonts, js, images);
+const dev = gulp.parallel(
+  browserSync,
+  watchFiles,
+  gulp.series(images, fonts, css, js, html)
+);
+
+exports.build = build;
+exports.default = dev;
+exports.dev = dev;
+
+/* const build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fonts = fonts;
@@ -144,3 +155,4 @@ exports.html = html;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
+  */

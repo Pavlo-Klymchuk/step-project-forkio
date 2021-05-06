@@ -1,13 +1,14 @@
 {
-  "name": "my-project",
+  "name": "step_project",
   "version": "1.0.0",
-  "description": "Pavlo Klymchuk",
+  "description": " step project by Anna Gudzenco and Pavlo Klymchuk",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
+    "dev": "gulp dev",
+    "build": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Pavlo",
+  "author": "Pavlo, Anna",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.14",
