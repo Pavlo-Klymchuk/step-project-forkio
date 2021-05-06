@@ -37,18 +37,22 @@
     }
     @media (min-width: 481px) {
         width: 100%;
-        font-size: 39px;
+        font-size: 37px;
         line-height: 44px;
     }
     @media (min-width: 482px) {
-        font-size: 40px;
+        font-size: 38px;
         line-height: 44px;
     }
     @media (min-width: 494px) {
-        font-size: 41px;
+        font-size: 39px;
         line-height: 44px;
     }
     @media (min-width: 506px) {
+        font-size: 40px;
+        line-height: 44px;
+    }
+    @media (min-width: 530px) {
         width: 506px;
         font-size: 42px;
         line-height: 44px;
@@ -57,37 +61,37 @@
         width: 100%;
         margin-top: 0px;
         padding-top: 95px;
-        font-size: 38px;
+        font-size: 36px;
         line-height: 50px;
     }
     @media (min-width: 999px) {
-        font-size: 39px;
+        font-size: 37px;
     }
     @media (min-width: 1012px) {
+        font-size: 38px;
+    }
+    @media (min-width: 1034px) {
+        font-size: 39px;
+    }
+    @media (min-width: 1046px) {
         font-size: 40px;
     }
-    @media (min-width: 1024px) {
+    @media (min-width: 1058px) {
         font-size: 41px;
     }
-    @media (min-width: 1036px) {
+    @media (min-width: 1070px) {
         font-size: 42px;
     }
-    @media (min-width: 1048px) {
+    @media (min-width: 1082px) {
         font-size: 43px;
     }
-    @media (min-width: 1060px) {
+    @media (min-width: 1094px) {
         font-size: 44px;
     }
-    @media (min-width: 1072px) {
+    @media (min-width: 1106px) {
         font-size: 45px;
     }
-    @media (min-width: 1084px) {
-        font-size: 46px;
-    }
-    @media (min-width: 1096px) {
-        font-size: 47px;
-    }
-    @media (min-width: 1108px) {
+    @media (min-width: 1158px) {
         font-size: 48px;
     }
 }
@@ -105,6 +109,7 @@
         grid-row: 1 / span 2;
         margin-top: 98px;
         padding-bottom: 71px;
+        margin-left: 25px;
     }
 }
 

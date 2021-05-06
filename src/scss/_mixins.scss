@@ -21,3 +21,11 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+%prices-item-heading {
+  font-family: $Montserrat;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
