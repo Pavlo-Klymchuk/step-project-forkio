@@ -1,5 +1,5 @@
 .advantages {
-    @media (min-width: 993px) {
+    @include desktop {
         margin-top: 70px;
         background-color: $bg-for-advantages;
         width: 100%;
@@ -7,7 +7,7 @@
 }
 
 .advantages__pc {
-    @media (min-width: 993px) {
+    @include desktop {
         display: grid;
         grid-template-columns: 530px 1fr;
         grid-template-rows: 150px 1fr;
@@ -35,7 +35,7 @@
     &::after {
         content: ">";
     }
-    @media (min-width: 481px) {
+    @include tablet {
         width: 100%;
         font-size: 37px;
         line-height: 44px;
@@ -57,7 +57,7 @@
         font-size: 42px;
         line-height: 44px;
     }
-    @media (min-width: 993px) {
+    @include desktop {
         width: 100%;
         margin-top: 0px;
         padding-top: 95px;
@@ -97,13 +97,13 @@
 }
 
 .advantages__items {
-    @media (min-width: 481px) {
+    @include tablet {
         margin-top: 50px;
         max-width: 700px;
         margin-left: auto;
         margin-right: auto;
     }
-    @media (min-width: 993px) {
+    @include desktop {
         width: 530px;
         order: -1;
         grid-row: 1 / span 2;
@@ -117,7 +117,7 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    @media (min-width: 481px) {
+    @include tablet {
         display: flex;
         width: 95%;
         justify-content: space-between;
@@ -136,38 +136,38 @@
 
 .advantages__item-logo {
     margin-top: 40px;
-    @media (min-width: 481px) {
+    @include tablet {
         margin-top: 0px;
     }
 }
 
 .advantages__item-logo--book {
     margin-left: 20px;
-    @media (min-width: 481px) {
+    @include tablet {
         margin-left: 0px;
         margin-right: 23px;
     }
 }
 
 .advantages__item-logo--tool {
-    @media (min-width: 481px) {
+    @include tablet {
         margin-right: 44px;
     }
 }
 .advantages__item-logo--stuff {
-    @media (min-width: 481px) {
+    @include tablet {
         margin-right: 74px;
     }
 }
 .advantages__item-logo--clock {
-    @media (min-width: 481px) {
+    @include tablet {
         margin-right: 63px;
     }
 }
 
 .advantages__item-singature {
     margin-top: 23px;
-    @media (min-width: 481px) {
+    @include tablet {
         margin-top: 0px;
         display: flex;
         flex-direction: column;
@@ -183,7 +183,7 @@
     color: $text-color-dark;
     margin-left: auto;
     margin-right: auto;
-    @media (min-width: 481px) {
+    @include tablet {
         line-height: 21px;
         display: flex;
         justify-content: start;
@@ -202,7 +202,7 @@
     margin-top: 14px;
     margin-left: auto;
     margin-right: auto;
-    @media (min-width: 481px) {
+    @include tablet {
         width: auto;
         max-width: 500px;
     }
@@ -213,14 +213,14 @@
     display: flex;
     justify-content: flex-end;
     margin-bottom: 6px;
-    @media (min-width: 481px) {
+    @include tablet {
         display: none;
     }
 }
 
 .advantages__img-pc {
     display: none;
-    @media (min-width: 481px) {
+    @include tablet {
         display: flex;
         justify-content: flex-end;
         padding-top: 10px;
@@ -228,14 +228,14 @@
         margin-right: auto;
         margin-bottom: 1px;
     }
-    @media (min-width: 993px) {
+    @include desktop {
         margin-top: 0px;
         padding-bottom: 33px;
     }
 }
 
 .advantages__img-pc-item {
-    @media (min-width: 481px) {
+    @include tablet {
         width: 100%;
     }
 }
