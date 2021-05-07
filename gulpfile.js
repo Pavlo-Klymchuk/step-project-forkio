@@ -143,16 +143,3 @@ const dev = gulp.parallel(
 exports.build = build;
 exports.default = dev;
 exports.dev = dev;
-
-/* const build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
-const watch = gulp.parallel(build, watchFiles, browserSync);
-
-exports.fonts = fonts;
-exports.images = images;
-exports.js = js;
-exports.css = css;
-exports.html = html;
-exports.build = build;
-exports.watch = watch;
-exports.default = watch;
-  */
