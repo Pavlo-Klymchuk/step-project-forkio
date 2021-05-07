@@ -1,10 +1,13 @@
 .reviews {
-  padding: 57px 0 10px;
+  padding: 57px 0 0;
   background: url(../img/reviews/bg/bg_mobil.jpg) center center / cover
     no-repeat;
+    background-position: bottom;
   @include desktop {
-    background: url(../img/reviews/bg/bg_desktop.jpg) center center / cover
+    background: url(../img/reviews/bg/bg_desktop.jpg) center bottom / cover
       no-repeat;
+      padding-bottom: 31px;
+      
   }
 }
 

@@ -2,13 +2,16 @@
     background-image: url(../img/prices/background-tel.png);
     background-size: cover;
     margin-top: -1px;
+    padding-top: 14px;
     color: $white;
     @media (min-width: 481px) {
         background-image: url(../img/prices/background-tablet.png);
+        padding-top: 88px;
     }
     @media (min-width: 993px) {
         background-image: url(../img/prices/background-pc.png);
-        margin-top: -7px;
+        margin-top: -12px;
+        padding-top: 83px;
     }
 }
 
@@ -50,9 +53,6 @@
         width: 100%;
         font-size: 48px;
         line-height: 50px;
-    }
-    @media (min-width: 993px) {
-        padding-top: 98px;
     }
 }
 
