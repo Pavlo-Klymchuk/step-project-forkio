@@ -15,44 +15,42 @@
     }
 }
 
-.prices__heading {
-    font-family: $Montserrat;
-    font-weight: bold;
-    font-size: 28px;
-    line-height: 42px;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    width: 320px;
-    @include tablet {
-        width: 95%;
-        font-size: 32px;
-        line-height: 50px;
-    }
-    @media (min-width: 510px) {
-        font-size: 34px;
-        line-height: 50px;
-    }
-    @media (min-width: 540px) {
-        font-size: 36px;
-        line-height: 50px;
-    }
-    @media (min-width: 570px) {
-        font-size: 38px;
-        line-height: 50px;
-    }
-    @media (min-width: 600px) {
-        font-size: 40px;
-        line-height: 50px;
-    }
-    @media (min-width: 630px) {
-        font-size: 42px;
-        line-height: 50px;
-    }
-    @media (min-width: 670px) {
-        width: 100%;
-        font-size: 48px;
-        line-height: 50px;
+.section__header{
+        &--prices{
+            font-size: 28px;
+            line-height: 42px;
+            text-align: center;
+            width: 320px;
+            @include tablet {
+                width: 95%;
+                font-size: 32px;
+                line-height: 50px;
+            }
+            @media (min-width: 510px) {
+                font-size: 34px;
+                line-height: 50px;
+            }
+            @media (min-width: 540px) {
+                font-size: 36px;
+                line-height: 50px;
+            }
+            @media (min-width: 570px) {
+                font-size: 38px;
+                line-height: 50px;
+            }
+            @media (min-width: 600px) {
+                font-size: 40px;
+                line-height: 50px;
+            }
+            @media (min-width: 630px) {
+                font-size: 42px;
+                line-height: 50px;
+            }
+            @media (min-width: 670px) {
+                width: 100%;
+                font-size: 48px;
+                line-height: 50px;
+        }
     }
 }
 
@@ -227,7 +225,7 @@
 
 .prises__item-number {
     padding-top: 30px;
-    font-family: $Montserrat;
+    font-family: $font-primary;
     font-weight: 700;
     font-size: 60px;
     line-height: 62px;
@@ -244,7 +242,7 @@
 
 .prises__item-month {
     margin-top: 20px;
-    font-family: $Montserrat;
+    font-family: $font-primary;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
@@ -263,7 +261,7 @@
 }
 
 .prises__item-license {
-    font-family: $Montserrat;
+    font-family: $font-primary;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -277,7 +275,7 @@
 
 .prises__item-button {
     margin-bottom: 36px;
-    font-family: $Montserrat;
+    font-family: $font-primary;
     font-weight: 400;
     font-size: 15px;
     line-height: 17px;
